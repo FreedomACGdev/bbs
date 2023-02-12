@@ -7,7 +7,7 @@
         <nuxt-link to="/links">友链</nuxt-link>
       </div>
       <div>
-        © 2022 Powered by
+        © 2023 Freedom动漫社 Powered by
         <a href="https://docs.bbs-go.com" target="_blank" class="light"
           >BBS-GO</a
         >

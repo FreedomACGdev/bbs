@@ -5,26 +5,15 @@
         <div class="widget-header">关于</div>
         <div class="widget-content content">
           <h2>简介</h2>
-          <p>
-            BBS-GO&nbsp;是一款基于Go语言研发的精美小巧的开源社区论坛系统。初期该项目仅用过学习和交流，开源之后越来越多的小伙伴儿开始喜欢和关注他，这也是我长期升级和维护的动力。
-          </p>
+          <p>这里是Freedom动漫社论坛。</p>
 
           <p>
-            为方便大家学习和交流我们在2019年8月使用&nbsp;BBS-GO&nbsp;搭建了&nbsp;<a
-              href="https://mlog.club"
-              target="_blank"
-              >码农俱乐部</a
-            >，欢迎大家前往交流。
+            本站基于bbs-go项目开发，基于GPL-3.0协议开源。
+            <br />
+            欢迎加入开发者团队
+            <a href="https://github.com/FreedomACGdev/bbs">项目地址</a>
           </p>
 
-          <h2>与我联系</h2>
-          <p>
-            如有任何想法、意见、问题可前往&nbsp;<a
-              href="https://mlog.club"
-              target="_blank"
-              >码农俱乐部</a
-            >&nbsp;交流。
-          </p>
           <h2>项目贡献者</h2>
           <p>
             <a
