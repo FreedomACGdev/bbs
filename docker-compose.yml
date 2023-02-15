@@ -24,13 +24,14 @@ services:
 
   server:
     container_name: bbs-go-server
-    image: mlogclub/bbs-go-server:latest
+    image: freedomacg/bbs-go-server
     depends_on:
       mysql:
         condition: service_healthy
-
     ports:
       - 8082:8082
+    networks:
+      - freedom_net
     build:
       dockerfile: Dockerfile
       context: ./server
@@ -41,14 +42,32 @@ services:
 
   site:
     container_name: bbs-go-site
-    image: mlogclub/bbs-go-site:latest
+    image: freedomacg/bbs-go-site
     depends_on:
       - server
     ports:
       - 3000:3000
+    networks:
+    - freedom_net
     build:
       dockerfile: Dockerfile
       context: ./site
     volumes:
       - ./site/nuxt.config.docker.js:/app/bbs-go/nuxt.config.js
     restart: on-failure
+
+  admin:
+    container_name: bbs-go-admin
+    image: freedomacg/bbs-go-admin
+    depends_on:
+      - server
+    ports:
+      - 80:80
+    networks:
+      - freedom_net
+    build:
+      dockerfile: Dockerfile
+      context: ./admin
+    restart: on-failure
+networks:
+  freedom_net:
