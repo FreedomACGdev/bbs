@@ -19,5 +19,5 @@ FROM nginx
 ENV APP_HOME /code/bbs-go/admin
 WORKDIR "$APP_HOME"
 EXPOSE 80
-COPY --from=builder /app/bbs-go/admin/dist/* /etc/nginx/html/
+COPY --from=builder /app/bbs-go/admin/dist/ /etc/nginx/html/admin/
 COPY nginx.conf /etc/nginx/conf.d/default.conf
